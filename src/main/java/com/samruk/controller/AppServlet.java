@@ -68,7 +68,7 @@ public class AppServlet {
 		return res.toString();
 	}	
 	
-	@CrossOrigin(origins = "http://localhost:4200")
+	@CrossOrigin
 	@PostMapping("/getEmpDevices")
 	public String getEmpDevices(@RequestBody Employee empl) {
 		JSONObject res = new JSONObject(); 
