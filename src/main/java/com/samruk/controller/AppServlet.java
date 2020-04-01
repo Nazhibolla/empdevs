@@ -17,7 +17,6 @@ import com.samruk.component.Device;
 import com.samruk.component.EmpDeviceCount;
 import com.samruk.component.EmpDevices;
 import com.samruk.component.Employee;
-import com.samruk.repository.EmpDevsDao;
 import com.samruk.service.EmpDevsService;
 
 @RestController
@@ -99,7 +98,6 @@ public class AppServlet {
 	@PostMapping("/addEmployee")
 	public String addEmployee(@RequestBody EmpDevices ed) {
 		JSONObject res = new JSONObject();
-		String name = ed.getEmployee().getFullName();
 		String str = edServ.addEmployee(ed);
 		
 		res.append("response", str );

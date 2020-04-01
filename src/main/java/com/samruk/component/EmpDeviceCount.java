@@ -1,8 +1,5 @@
 package com.samruk.component;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement
 public class EmpDeviceCount {
 	
 	int e_id;
